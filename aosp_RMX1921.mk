@@ -5,12 +5,12 @@
 #
 
 # Inherit some common Rice stuff
-SUSHI_BOOTANIMATION := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
-RICE_MAINTAINER := Dhruvesh
-RICE_OFFICIAL := true
+ETERNITY_MAINTAINER := Dhruvesh
+CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_ENABLE_BLUR := true
 
 # Inherit from RMX1921 device
@@ -19,7 +19,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := lineage_RMX1921
+PRODUCT_NAME := aosp_RMX1921
 PRODUCT_MODEL := Realme XT
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
